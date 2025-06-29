@@ -33,7 +33,7 @@ namespace WinFormsApp1
                 Form2 newForm = new Form2();
                 newForm.Show(); // Use .ShowDialog() if you want it modal
         }
-        string connectionString = "Data Source=DESKTOP-MAP0NI6\\TEW_SQLEXPRESS;Initial Catalog=test_db;Integrated Security=True;";
+        string connectionString = "Data Source=192.168.0.132\\TEW_SQLEXPRESS;Initial Catalog=test_db;Integrated Security=True;";
         private bool ValidateLogin(string username, string password)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))

@@ -28,7 +28,7 @@ namespace WinFormsApp1
             MessageBox.Show(" user added, signup successful");
             this.Hide();
         }
-        string connectionString = "Data Source=DESKTOP-MAP0NI6\\TEW_SQLEXPRESS;Initial Catalog=test_db;Integrated Security=True;";
+        string connectionString = "Data Source=192.168.0.132\\TEW_SQLEXPRESS;Initial Catalog=test_db;Integrated Security=True";
         private void InsertUser(string username, string password, string email)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
